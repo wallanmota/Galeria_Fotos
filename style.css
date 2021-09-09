@@ -7,3 +7,15 @@
 body{
     background: #dce3e9;
 }
+
+.img-galeria{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.img-galeria img{
+    width: 100%;
+    cursor: pointer;
+}
