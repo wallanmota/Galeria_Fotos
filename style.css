@@ -8,6 +8,10 @@ body{
     background: #dce3e9;
 }
 
+img{
+    max-width: 500px;
+}
+
 .img-galeria{
     width: 80%;
     margin: 100px auto 50px;
@@ -17,5 +21,34 @@ body{
 }
 .img-galeria img{
     width: 100%;
+    cursor: pointer;
+}
+.img-galeria img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 40px 40px rgba(68, 77, 136, 0.8);
+}
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img{
+    width: 90%;
+    border-radius: 5px;
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #fff;
+    font-size: 30px;
     cursor: pointer;
 }
